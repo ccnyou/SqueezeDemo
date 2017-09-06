@@ -12,5 +12,5 @@
 - (UIImage *)scaleToSize:(CGSize)size;
 - (UIImage *)cropToSize:(CGSize)size;
 + (CVPixelBufferRef)pixelBufferFromCGImage:(UIImage *)originImage;
-- (void)writeToFile:(NSString *)path;
+
 @end

@@ -83,9 +83,4 @@
     return pxbuffer;
 }
 
-- (void)writeToFile:(NSString *)path {
-    NSData *data = UIImagePNGRepresentation(self);
-    [data writeToFile:path atomically:YES];
-}
-
 @end
