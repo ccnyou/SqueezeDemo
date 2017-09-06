@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1I-ya-FOi">
+                                <rect key="frame" x="0.0" y="581" width="375" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="NO3-Vv-QKn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5o7-2m-4o2">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Wjf-uo-CV1"/>
+                                </constraints>
+                                <state key="normal" title="Next &gt;&gt;"/>
+                                <connections>
+                                    <action selector="onNextTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdj-3b-VUT"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YC5-yh-MrL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5o7-2m-4o2" firstAttribute="top" secondItem="K1I-ya-FOi" secondAttribute="bottom" id="3Qt-m4-sdn"/>
+                            <constraint firstItem="K1I-ya-FOi" firstAttribute="centerX" secondItem="k76-B3-T7v" secondAttribute="centerX" id="FaT-q5-rta"/>
+                            <constraint firstItem="5o7-2m-4o2" firstAttribute="leading" secondItem="k76-B3-T7v" secondAttribute="leading" id="JOr-qb-dWu"/>
+                            <constraint firstItem="K1I-ya-FOi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="MPW-SS-MSX"/>
+                            <constraint firstItem="k76-B3-T7v" firstAttribute="trailing" secondItem="YC5-yh-MrL" secondAttribute="trailing" id="RRG-2L-Gr5"/>
+                            <constraint firstItem="YC5-yh-MrL" firstAttribute="leading" secondItem="k76-B3-T7v" secondAttribute="leading" id="Zc1-kb-3hh"/>
+                            <constraint firstItem="K1I-ya-FOi" firstAttribute="firstBaseline" secondItem="YC5-yh-MrL" secondAttribute="baseline" constant="24.5" symbolType="layoutAnchor" id="gGl-PP-pYk"/>
+                            <constraint firstItem="YC5-yh-MrL" firstAttribute="top" secondItem="k76-B3-T7v" secondAttribute="top" constant="-20" id="kCU-sp-NYg"/>
+                            <constraint firstItem="5o7-2m-4o2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="tl0-ir-THV"/>
+                            <constraint firstItem="YC5-yh-MrL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uLP-3z-38h"/>
+                            <constraint firstItem="k76-B3-T7v" firstAttribute="bottom" secondItem="5o7-2m-4o2" secondAttribute="bottom" id="zpO-aP-nlI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k76-B3-T7v"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="YC5-yh-MrL" id="3Cv-Uw-qyF"/>
+                        <outlet property="label" destination="K1I-ya-FOi" id="d85-ah-ePM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="90.404797601199405"/>
+        </scene>
+    </scenes>
+</document>
