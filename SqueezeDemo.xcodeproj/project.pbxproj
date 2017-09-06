@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6DD187E1F602CAE00C3FCC2 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = A6DD187D1F602C5200C3FCC2 /* Images */; };
 		B229283A1F1FBD6500CD8864 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B22928391F1FBD5C00CD8864 /* SqueezeNet.mlmodel */; };
 		B229283D1F1FBDBB00CD8864 /* UIImage+scale.m in Sources */ = {isa = PBXBuildFile; fileRef = B229283C1F1FBDBB00CD8864 /* UIImage+scale.m */; };
-		B229283F1F1FBEFA00CD8864 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = B229283E1F1FBEFA00CD8864 /* Images */; };
 		B24C05C61F16698900FC075D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C05C51F16698900FC075D /* AppDelegate.m */; };
 		B24C05C91F16698900FC075D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C05C81F16698900FC075D /* ViewController.m */; };
 		B24C05CC1F16698900FC075D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24C05CA1F16698900FC075D /* Main.storyboard */; };
@@ -19,10 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6DD187D1F602C5200C3FCC2 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		B22928391F1FBD5C00CD8864 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 		B229283B1F1FBDBB00CD8864 /* UIImage+scale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+scale.h"; sourceTree = "<group>"; };
 		B229283C1F1FBDBB00CD8864 /* UIImage+scale.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+scale.m"; sourceTree = "<group>"; };
-		B229283E1F1FBEFA00CD8864 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = ../../../Images; sourceTree = "<group>"; };
 		B24C05C11F16698900FC075D /* SqueezeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqueezeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24C05C41F16698900FC075D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B24C05C51F16698900FC075D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		B24C05C31F16698900FC075D /* SqueezeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B229283E1F1FBEFA00CD8864 /* Images */,
+				A6DD187D1F602C5200C3FCC2 /* Images */,
 				B22928391F1FBD5C00CD8864 /* SqueezeNet.mlmodel */,
 				B24C05C41F16698900FC075D /* AppDelegate.h */,
 				B24C05C51F16698900FC075D /* AppDelegate.m */,
@@ -139,7 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B229283F1F1FBEFA00CD8864 /* Images in Resources */,
+				A6DD187E1F602CAE00C3FCC2 /* Images in Resources */,
 				B24C05D11F16698900FC075D /* LaunchScreen.storyboard in Resources */,
 				B24C05CE1F16698900FC075D /* Assets.xcassets in Resources */,
 				B24C05CC1F16698900FC075D /* Main.storyboard in Resources */,
